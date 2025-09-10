@@ -1,3 +1,4 @@
+#question 4 code
 #https://github.com/GreysonRCamp/numanal/blob/main/hw1p4.py
 
 xstorage = [] #Stores the solutions u and x values for plotting
