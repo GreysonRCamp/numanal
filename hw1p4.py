@@ -50,10 +50,13 @@ import matplotlib.pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
 
 with PdfPages("hw1p4plots.pdf") as pdf:
+    fig,axes = plt.subplots(2,4,figsize=(16,8))
     for i in range(8):
-        plt.scatter(xstorage[i],ustorage[i],color=(0,56/255,49/255), marker='o')
-        plt.xlabel("xi")
-        plt.ylabel("ui")
-        plt.title("n = " + str(i + 1))
-        pdf.savefig()
-        plt.close()
+        ax = axes[i // 4, i % 4]
+        ax.scatter(xstorage[i],ustorage[i],color=(0,56/255,49/255),marker='o')
+        ax.set_xlabel("xi")
+        ax.set_ylabel("ui")
+        ax.set_title("n = " + str(i+1))
+    plt.tight_layout()
+    pdf.savefig(fig)
+    plt.close(fig)
