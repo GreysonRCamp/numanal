@@ -45,7 +45,7 @@ def print_table_to_file(headers, rows, filename):
     col_widths = [max(len(str(item)) for item in col) for col in zip(*all_rows)]
 
     with open(filename, "w") as f:
-        f.write("https://github.com/GreysonRCamp/numanal/blob/main/gs.py\n")
+        f.write("https://github.com/GreysonRCamp/numanal/blob/main/gs.py \n")
         # Header
         f.write("  ".join(f"{str(item):<{w}}" for item, w in zip(headers, col_widths)) + "\n")
         f.write("-" * (sum(col_widths) + 2 * (len(col_widths)-1)) + "\n")
