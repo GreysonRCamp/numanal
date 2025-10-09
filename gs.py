@@ -32,8 +32,6 @@ for k in range(10):
     x.append(list(xguess))
     errors.append(maxerror(xactual,xguess))
 
-print(x[9])
-
 headers = ["k", "x1", "x2", "x3", "max e", "max e / last max e"]
 rows = []
 for k in range(10):
@@ -45,7 +43,7 @@ def print_table_to_file(headers, rows, filename):
     col_widths = [max(len(str(item)) for item in col) for col in zip(*all_rows)]
 
     with open(filename, "w") as f:
-        f.write("https://github.com/GreysonRCamp/numanal/blob/main/gs.py \n")
+        f.write("https://github.com/GreysonRCamp/numanal/blob/main/gs.py \n\n")
         # Header
         f.write("  ".join(f"{str(item):<{w}}" for item, w in zip(headers, col_widths)) + "\n")
         f.write("-" * (sum(col_widths) + 2 * (len(col_widths)-1)) + "\n")
