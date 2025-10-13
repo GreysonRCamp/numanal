@@ -53,7 +53,7 @@ oldres = 1000000
 newres = residual(b,A,xold)
 
 with open("hw7q4.txt","w") as f:
-    f.write("https://github.com/GreysonRCamp/numanal/blob/main/hw3q4.txt\n\n")
+    f.write("https://github.com/GreysonRCamp/numanal/blob/main/hw3q4.py\n\n")
     f.write(f"{'Method':<10}{'k':<8}{'Residual':<16}{'Successive Ratio':<18}\n")
     f.write("-"*50 + "\n")
 
