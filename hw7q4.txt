@@ -1,0 +1,6 @@
+https://github.com/GreysonRCamp/numanal/blob/main/hw3q2jac.txt
+
+Method    k       Residual        Successive Ratio  
+--------------------------------------------------
+Jacobi    11      0.007820129     0.500488          
+GS        7       0.009746552     0.502953          
