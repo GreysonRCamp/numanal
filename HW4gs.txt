@@ -1,0 +1,11 @@
+Gauss-Seidel
+Epsilon = 0.01
+Max Change in x: 7.748009e-03
+Number of iterations: 13
+
+Final solution vector x:
+x[1] = 1.01183544
+x[2] = -2.00971622
+x[3] = 2.98318559
+x[4] = -1.99842616
+x[5] = 0.98940076

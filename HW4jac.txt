@@ -1,0 +1,11 @@
+Jacobi
+Epsilon = 0.01
+Max Change in x: 9.351463e-03
+Number of iterations: 15
+
+Final solution vector x:
+x[1] = 1.03176945
+x[2] = -2.02973650
+x[3] = 2.94512037
+x[4] = -1.99197669
+x[5] = 0.96203908

@@ -1,0 +1,11 @@
+Conjugate Gradient
+Epsilon = 0.01
+Residual norm after convergence: 1.227346e-15
+Number of iterations: 5
+
+Final solution vector x:
+x[1] = 1.00000000
+x[2] = -2.00000000
+x[3] = 3.00000000
+x[4] = -2.00000000
+x[5] = 1.00000000

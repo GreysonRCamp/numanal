@@ -1,0 +1,11 @@
+Gradient Descent
+Epsilon = 0.01
+Residual norm after convergence: 9.740023e-03
+Number of iterations: 32
+
+Final solution vector x:
+x[1] = 1.00202114
+x[2] = -2.00188206
+x[3] = 2.99633980
+x[4] = -1.99926694
+x[5] = 0.99726409

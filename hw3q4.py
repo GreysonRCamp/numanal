@@ -45,6 +45,9 @@ b = [0,0,1,0,0,1,0,0,1]
 A = [[B,negI,zerom],[negI,B,negI],[zerom,negI,B]]
 A = flatten(A)
 
+for row in A:
+    print(row)
+
 xold = [0,0,0,0,0,0,0,0,0]
 
 xnew = [0,0,0,0,0,0,0,0,0]
@@ -66,13 +69,14 @@ with open("hw7q4.txt","w") as f:
         xold = list(xnew)
         oldres = newres
         newres = residual(b, A, xold)
-        #print(res)
+        #print(newres,newres/oldres)
         if newres < 10**(-2) or k == 99:
             f.write(f"{method:<10}{k+1:<8}{newres:<16.9f}{newres/oldres:<18.6f}\n")
             break
 
     for x in xold:
         print(round(x,5),end=" ")
+    print()
     print()
 
     gsx = [0,0,0,0,0,0,0,0,0]
@@ -86,7 +90,7 @@ with open("hw7q4.txt","w") as f:
 
         gsoldres = gsnewres
         gsnewres = residual(b,A,gsx)
-
+        #print(gsnewres,gsnewres/gsoldres)
         if gsnewres < 10**(-2) or k == 99:
             f.write(f"{method:<10}{k+1:<8}{gsnewres:<16.9f}{gsnewres/gsoldres:<18.6f}\n")
             break

@@ -1,4 +1,4 @@
-https://github.com/GreysonRCamp/numanal/blob/main/hw3q4.py
+https://github.com/GreysonRCamp/numanal/blob/main/hw3q4.py 
 
 Method    k       Residual        Successive Ratio  
 --------------------------------------------------
